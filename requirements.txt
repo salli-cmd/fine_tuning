@@ -1,0 +1,25 @@
+# Versions below are the ones installed on this machine (Python 3.12, Windows).
+#
+# torch / torchvision / torchaudio are NOT listed on purpose: this PC uses the AMD ROCm
+# build (torch==2.9.1+rocmsdk20260116). Installing "torch" from PyPI would replace it with
+# a CPU-only build. Install the ROCm wheels first, following AMD's Radeon-on-Windows guide:
+# https://rocm.docs.amd.com/projects/radeon-ryzen/en/latest/docs/install/installrad/windows/install-pytorch.html
+#
+# Then: pip install -r requirements.txt
+
+transformers==5.20.0
+peft==0.21.2
+datasets==5.1.0
+accelerate==1.15.0
+safetensors==0.8.0
+tokenizers==0.23.3
+huggingface_hub==2.2.0
+numpy==2.4.4
+
+# GGUF export (convert_hf_to_gguf.py from llama.cpp)
+gguf==0.19.0
+sentencepiece==0.2.2
+protobuf==7.36.2
+
+# Running the notebook
+ipykernel==7.3.0
